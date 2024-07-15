@@ -1,13 +1,10 @@
 import React,{useState} from 'react'
 import { ToastContainer, toast } from 'react-toastify'
-
 function TodoList() {
 
  const [ tasks , setTasks] = useState([])
  const [ newtask , setNewtask] = useState("")
 
-
- 
  function handleInputChange(event) {
   setNewtask(event.target.value)
  }
